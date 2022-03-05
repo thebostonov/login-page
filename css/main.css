@@ -1,0 +1,221 @@
+:root {
+  --text-main: #224957;
+  --body-color: #e5e5e5;
+  --input-bg: #224957;
+  --button-color: #20df7f;
+  --text-white: #fff;
+  --secondary-color: #093545;
+}
+.darkmode {
+  --text-main: #fff;
+  --body-color: #093545;
+  --input-bg: #224957;
+  --button-color: #20df7f;
+  --text-white: #fff;
+  --secondary-color: #fff;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+  box-sizing: inherit;
+}
+body {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  list-style-type: none;
+  background: var(--body-color);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.login-page {
+  width: 100%;
+  height: 84.58%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+.agrologo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.agro-logo {
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+  height: 230px;
+  margin-bottom: 25px;
+}
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+}
+.login-heading {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 70px;
+  text-align: center;
+  color: var(--text-main);
+}
+.login-desc {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 35px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--text-main);
+}
+.login-form {
+  width: 100%;
+  margin: 0px 24px;
+}
+.login-input {
+  width: 100%;
+  padding: 12px 18px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: var(--input-bg);
+  border: none;
+  border-radius: 10px;
+  color: var(--text-white);
+}
+.input-bottom {
+  margin-bottom: 32px;
+}
+.login-input::placeholder {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-white);
+}
+.login-button {
+  width: 100%;
+  padding: 12px 0px;
+  border: none;
+  background: var(--button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--text-main);
+}
+.login-remember {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 23px 0px;
+}
+.remember-input {
+  width: 50%;
+}
+.login-checkbox {
+  background-color: var(--input-bg);
+  margin-right: 7px;
+}
+.remember-me {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--secondary-color);
+}
+.login-bottom {
+  width: 100%;
+  height: 15.42%;
+  background-image: url("../img/login-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: center top 1px;
+  background-size: cover;
+}
+.darkmode-toggle {
+  width: 70px;
+  height: 70px;
+  background-image: url("../img/darkmode.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 36px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 473px) {
+  .agro-logo {
+    max-width: 350px;
+    height: 200px;
+  }
+  .login-heading {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .agro-logo {
+    max-width: 300px;
+    height: 175px;
+  }
+  .login-heading {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+@media only screen and (max-width: 387px) {
+  .agro-logo {
+    max-width: 300px;
+    height: 175px;
+  }
+  .login-heading {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+@media only screen and (max-width: 349px) {
+  .agro-logo {
+    max-width: 300px;
+    height: 157px;
+  }
+  .login-heading {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
