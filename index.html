@@ -20,71 +20,74 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <section class="login-page">
-      <div class="agrologo-wrapper">
-        <div class="agro-logo">
-          <img src="./img/agrologo.svg" alt="Agro Logo" />
-        </div>
-        <h1 class="display-1 login-heading">AGRO KLASTER</h1>
-        <!-- <p class="login-desc">Sign in and start managing your candidates!</p> -->
-      </div>
-      <div class="login-wrapper">
-        <form
-          class="login-form"
-          action="https://echo.htmlacademy.ru/"
-          method="post"
-        >
-          <input
-            class="input-group login-input input-bottom"
-            type="text"
-            placeholder="Login"
-            name="user_login"
-            autocomplete="off"
-            required
-          />
-          <input
-            class="input-group login-input"
-            type="password"
-            placeholder="Password"
-            name="user_password"
-            minlength="5"
-            maxlength="25"
-            required
-          />
-          <div class="login-remember">
-            <input
-              class="login-input remember-input visually-hidden"
-              type="text"
-              placeholder="Enter code!"
-              minlength="4"
-              maxlength="6"
-            />
-            <div class="form-check">
-              <input
-                class="form-check-input login-checkbox"
-                type="checkbox"
-                value=""
-                id="flexCheckDefault"
-              />
-              <label
-                class="form-check-label remember-me"
-                for="flexCheckDefault"
-              >
-                Remember me
-              </label>
-            </div>
+    <section class="login">
+      <div class="login-page">
+        <div class="agrologo-wrapper">
+          <div class="agro-logo">
+            <img src="./img/agrologo.svg" alt="Agro Logo" />
           </div>
-          <button class="btn login-button" type="submit">Login</button>
-        </form>
+          <h1 class="display-1 login-heading">AGRO KLASTER</h1>
+          <!-- <p class="login-desc">Sign in and start managing your candidates!</p> -->
+        </div>
+        <div class="login-wrapper">
+          <form
+            class="login-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <input
+              class="input-group login-input input-bottom"
+              type="text"
+              placeholder="Login"
+              name="user_login"
+              autocomplete="off"
+              required
+            />
+            <input
+              class="input-group login-input"
+              type="password"
+              placeholder="Password"
+              name="user_password"
+              minlength="5"
+              maxlength="25"
+              required
+            />
+            <div class="login-remember">
+              <input
+                class="login-input remember-input visually-hidden"
+                type="text"
+                placeholder="Enter code!"
+                minlength="4"
+                maxlength="6"
+              />
+              <div class="form-check">
+                <input
+                  class="form-check-input login-checkbox"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  class="form-check-label remember-me"
+                  for="flexCheckDefault"
+                >
+                  Remember me
+                </label>
+              </div>
+            </div>
+            <button class="btn login-button" type="submit">Login</button>
+          </form>
+        </div>
       </div>
+      <div class="login-bottom"></div>
+      <div
+        class="darkmode-toggle"
+        data-bs-toggle="tooltip"
+        data-bs-placement="left"
+        title="Dark Mode"
+      ></div>
     </section>
-    <div class="login-bottom"></div>
-    <div
-      class="darkmode-toggle"
-      data-bs-toggle="tooltip"
-      data-bs-placement="left"
-      title="Dark Mode"
-    ></div>
+
     <script src="login.js"></script>
   </body>
 </html>
