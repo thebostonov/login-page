@@ -37,14 +37,16 @@
           >
             <input
               class="input-group login-input input-bottom"
+              id="userphone"
               type="text"
-              placeholder="Login"
+              placeholder="Phone"
               name="user_login"
               autocomplete="off"
               required
             />
             <input
               class="input-group login-input"
+              id="userpass"
               type="password"
               placeholder="Password"
               name="user_password"
@@ -69,13 +71,16 @@
                 />
                 <label
                   class="form-check-label remember-me"
+                  id="remember"
                   for="flexCheckDefault"
                 >
                   Remember me
                 </label>
               </div>
             </div>
-            <button class="btn login-button" type="submit">Login</button>
+            <button class="btn login-button" id="enterbtn" type="submit">
+              Enter
+            </button>
           </form>
         </div>
       </div>
@@ -99,7 +104,7 @@
         </div>
         <ul class="lang-btns">
           <li class="lang-btn">
-            <a href="#" class="lang-btn-link">
+            <a href="#" class="lang-btn-link" data-id="uz">
               <img
                 class="lang-btn-img"
                 src="./img/uz.svg"
@@ -111,7 +116,7 @@
             </a>
           </li>
           <li class="lang-btn">
-            <a href="#" class="lang-btn-link">
+            <a href="#" class="lang-btn-link" data-id="ru">
               <img
                 class="lang-btn-img"
                 src="./img/ru.svg"
@@ -123,7 +128,7 @@
             </a>
           </li>
           <li class="lang-btn">
-            <a href="#" class="lang-btn-link">
+            <a href="#" class="lang-btn-link" data-id="en">
               <img
                 class="lang-btn-img"
                 src="./img/gb.svg"
