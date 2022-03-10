@@ -1,3 +1,5 @@
+const langToggle = document.querySelector(".lang-toggle");
+const langSelect = document.querySelector(".lang-select");
 let darkMode = localStorage.getItem("darkMode");
 const darkModeToggle = document.querySelector(".darkmode-toggle");
 // check if dark mode is enabled
@@ -29,4 +31,8 @@ darkModeToggle.addEventListener("click", () => {
   } else {
     disableDarkMode();
   }
+});
+
+langSelect.addEventListener("click", function () {
+  langToggle.classList.toggle("lang-open");
 });

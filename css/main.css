@@ -5,6 +5,8 @@
   --button-color: #20df7f;
   --text-white: #fff;
   --secondary-color: #093545;
+  --primary-color: #eeeeee;
+  --lang-hover: #224957;
 }
 .darkmode {
   --text-main: #fff;
@@ -13,6 +15,8 @@
   --button-color: #20df7f;
   --text-white: #fff;
   --secondary-color: #fff;
+  --primary-color: #224957;
+  --lang-hover: #093545;
 }
 *,
 *::after,
@@ -104,6 +108,7 @@ body {
 .login-form {
   width: 100%;
   margin: 0px 24px;
+  margin-bottom: 50px;
 }
 .login-input {
   width: 100%;
@@ -187,7 +192,75 @@ body {
   left: 30px;
   cursor: pointer;
 }
-
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+}
+.lang-open .lang-btns {
+  display: none;
+}
+.lang-select {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.lang-select-desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 15px;
+  color: var(--text-main);
+  padding-right: 3px;
+  padding-left: 6px;
+}
+.lang-btns {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  padding: 5px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.lang-btn {
+  display: inline-block;
+}
+.lang-btn-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 7px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+}
+.lang-btn-link:hover {
+  background-color: var(--lang-hover);
+}
+.lang-btn-img {
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.lang-btn-desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--text-main);
+}
+.lang-btn-link:hover .lang-btn-desc {
+  color: var(--text-white);
+}
 @media only screen and (max-width: 473px) {
   .agro-logo {
     max-width: 350px;
