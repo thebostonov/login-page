@@ -36,36 +36,41 @@ darkModeToggle.addEventListener("click", () => {
 
 langSelect.addEventListener("click", function () {
   langToggle.classList.toggle("lang-open");
+  // if (langToggle.classList.contains("lang-open")) {
+  //   langToggle.classList.remove("lang-open");
+  // } else {
+  //   langToggle.classList.add("lang-open");
+  // }
 });
 
-const inputPlaceholder = document.querySelector(".input-bottom");
-const inputPlace = document.querySelector(".login-input");
-const buttonDesc = document.querySelector(".login-button");
 const langMainDesc = document.querySelector(".lang-select-desc");
 const langBtns = document.querySelectorAll(".lang-btn");
 const langLinks = document.querySelectorAll(".lang-btn-link");
 const langDesc = document.querySelectorAll(".lang-btn-desc");
 langLinks.forEach(function (langLink) {
   langLink.addEventListener("click", function (e) {
-    const id = e.target.dataset.id;
+    const id = e.currentTarget.dataset.id;
     if (id == "uz") {
-      langMainDesc.innerHTML = "Uzbek";
+      langMainDesc.innerHTML = "O'zbek";
       userphone.setAttribute("placeholder", "Telfon");
       userpass.setAttribute("placeholder", "Parol");
       remember.textContent = "Meni eslabqol";
       enterbtn.textContent = "Kirish";
+      langToggle.classList.add("lang-open");
     } else if (id == "ru") {
       langMainDesc.innerHTML = "Russian";
       userphone.setAttribute("placeholder", "Телефон");
       userpass.setAttribute("placeholder", "Пароль");
       remember.textContent = "Запомни меня";
       enterbtn.textContent = "Войти";
+      langToggle.classList.add("lang-open");
     } else if (id == "en") {
       langMainDesc.innerHTML = "English";
       userphone.setAttribute("placeholder", "Phone");
       userpass.setAttribute("placeholder", "Password");
       remember.textContent = "Remember me";
       enterbtn.textContent = "Enter";
+      langToggle.classList.add("lang-open");
     }
   });
 });
